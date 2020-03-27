@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Release>
+@{
+    ViewData["Title"] = "Releases";
+}
+<!-- TO DO: DONE -->
+<div class="container pb-3">
+    <div class="text-center text-primary">
+        <h1 class="display-4">Releases</h1>
+    </div>
+
+    <div class="card-group text-center">
+        @foreach (Release r in Model)
+        {
+            <div style="color: black">
+                <div class="card bg-dark">
+                    <div class="card-body text-white btn-outline-primary">
+                        <img class="card-img" src="@r.Image" style="width:200px" alt="@r.Title">
+                        <div class="card-text m-auto" style="width:200px">
+                            <h5 class="bg-danger">@r.Title</h5>
+                            <p>@r.Artist</p>
+                            <span>
+                                <a href="@r.Link" class="text-white btn btn-success">Grab a copy</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <br />
+    <span class="text-left">
+        <a href="https://www.beatport.com/label/seres-producoes/37629" class="btn btn-success">MORE RECENT RELEASES</a>
+    </span>
+    <br />
+    @*<p class="bg-danger text-center">Site under contruction...</p>*@
+</div>

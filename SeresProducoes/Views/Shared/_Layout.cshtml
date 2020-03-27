@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SERES PRODUÇÕES</title>
+    <!-- Bootstrap CSS -->
+    <link asp-href-include="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link asp-href-include="styles/site.css" rel="stylesheet" />
+    <link asp-href-include="styles/home.css" rel="stylesheet" />
+    <link asp-href-include="styles/site.css" rel="stylesheet" />
+    <link asp-href-include="lib/font-awesome/css/all.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <!-- Navigation | border-bottom box-shadow mb-3-->
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light fixed-top" style="background-color: black;">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <h3 class="text-light">SERES PRODUÇÕES</h3>
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Home" asp-action="Index">HOME</a>
+                        </li>
+                        @*<li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Artists" asp-action="Artists">ARTISTS</a>
+                            </li>*@
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Releases" asp-action="Releases">MUSIC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Events" asp-action="Events">EVENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="News" asp-action="News">NEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-controller="Home" asp-action="Index"><img src="~/images/Logo.png" style="width:80px" alt="SERES PRODUCOES" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Radio" asp-action="Radio">RADIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Gallery" asp-action="Gallery">MEDIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="About" asp-action="About">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Contact" asp-action="Contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="text-white" style="margin-top: 100px;">
+        @RenderBody()
+    </div>
+    <!-- footer -->
+    @*<footer class="border-top footer text-muted text-center bg-light">
+            <div class="container">
+                Copyright &copy; 2000-2020 - <a asp-controller="Home" asp-action="Index">SERES PRODUÇÕES</a> | All Rights Reserved
+            </div>
+        </footer>*@
+    <!-- Footer -->
+    <footer style="background-image: url('/images/footer.jpg');">
+
+        <div style="background-color: black;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 text-light">Get connected with us on social networks!</h6>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="https://www.facebook.com/seresproducoes/">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="https://twitter.com/SeresProducoes">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic" href="https://www.instagram.com/seresproducoes/?hl=en">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+                        @*
+                            yt: https://www.youtube.com/user/seresproducoestv
+                            medium.com:
+                        *@
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-light text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">SERES PRODUÇÕES</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        A label based in Luanda, Angola. Started in year 2000 by DJ Satelite and has since been extremely blessed
+                        over the years for counted with massive talented artists who have released top notch works.
+                    </p>
+                    <a asp-controller="About" asp-action="About">
+                        ABOUT US
+                    </a>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">MUSIC</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://www.traxsource.com/label/17008/seres-producoes">TRAXSOURCE</a>
+                    </p>
+                    <p>
+                        <a href="https://www.beatport.com/label/seres-producoes/37629">BEATPORT</a>
+                    </p>
+                    <p>
+                        <a href="https://soundcloud.com/seres_producoes">SOUNDCLOUD</a>
+                    </p>
+                    <p>
+                        <a href="https://seresproducoes.bandcamp.com/music">BANDCAMP</a>
+                    </p>
+                    <p>
+                        <a href="https://www.mixcloud.com/seresproducoes/stream/">MIXCLOUD</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">STORE</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://seresproducoes.bandcamp.com/merch">Get Our Merchandise</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        For general info, licensing or to send your demos, please write to:
+                        <span class="fas fa-envelope pr-2"></span>
+                        <a href="mailto:info@seresproducoes.com?">info@seresproducoes.com</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="text-center text-muted">
+            &copy; 2000-2020 Copyright - <a asp-controller="Home" asp-action="Index">SERES PRODUÇÕES</a> | All Rights Reserved
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- JavaScript -->
+    <script asp-src-include="lib/jquery/jquery.slim.min.js"></script>
+    <script asp-src-include="lib/popper.js/popper.min.js"></script>
+    <script asp-src-include="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

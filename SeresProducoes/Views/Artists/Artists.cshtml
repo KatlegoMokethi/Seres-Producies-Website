@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Artist>
+
+@{
+    ViewData["Title"] = "Artists";
+}
+<!-- TO DO: DONE -->
+<div class="container pb-3  text-center">
+    <h1 class="display-4 pb-3 text-primary">ARTISTS</h1>
+
+    <div class="card-columns">
+        @foreach (Artist a in Model)
+        {
+            <div class="card" style="background-image: url('/images/grey.jpg'); width:100%">
+                <div class="card-body btn-outline-light">
+                    <img class="card-img" src="@a.Image" style="width: 250px" alt="@a.Name">
+                    <div class="card-text">
+                        @*<h5 class="text-right">@a.Image</h5>*@
+                        <h3>
+                            <a asp-controller="Artists" asp-action="Details" asp-route-id="@a.Id">@a.Name</a>
+                        </h3>
+                        <div>
+                            <a href="@a.FacebookLink"><span class="fab fa-facebook-square fa-2x"></span></a>
+                            <a href="@a.TwitterLink"><span class="fab fa-twitter-square fa-2x"></span></a>
+                            <a href="@a.SoundCloudLink"><span class="fab fa-soundcloud fa-2x " style="color: orangered"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center">
+        <h4>For booking our artists:</h4>
+        <p>
+            <a href="mailto:booking@seresproducoes.com?Subject=Request%20to%20book%20an%20artist" target="_top">booking@seresproducoes.com</a>
+        </p>
+        @*<p class="bg-danger">Site under contruction...</p>*@
+    </div>
+</div>
