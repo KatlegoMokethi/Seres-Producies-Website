@@ -13,16 +13,19 @@
 </head>
 <body>
     <header>
-        <!-- Navigation | border-bottom box-shadow mb-3-->
-        <nav id="navbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light fixed-top" style="background-color: black;">
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light fixed-top">
             <div class="container">
+                <!--Navbar Brand-->
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <h3 class="text-light">SERES PRODUÇÕES</h3>
                 </a>
+                <!--Hamburger menu-->
                 <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!--Nav Items-->
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -41,7 +44,7 @@
                             <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="News" asp-action="News">NEWS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-controller="Home" asp-action="Index"><img src="~/images/Logo.png" style="width:80px" alt="SERES PRODUCOES" /></a>
+                            <a class="nav-link text-light" asp-controller="Home" asp-action="Index"><img src="~/images/Logo.png" style="width:90px" alt="SERES PRODUCOES" /></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Radio" asp-action="Radio">RADIO</a>
