@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    //Layout = null;
 }
 <!-- TO DO: DONE -->
 <!-- <div class="section"> -->
@@ -16,7 +17,195 @@
 <!--     </div> -->
 <!-- </div> -->
 
-<div class="Top-Content">
-    <img src="~/images/articles/n02.jpeg" style="width:100%;"/>
-    <p>WELCOME TO SERES PRODUCOES</p>
+<div class="Home-Top-Content">
+    <!-- Carousel -->
+    <div id="CarouselTarget" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#CarouselTarget" data-slide-to="0" class="active"></li>
+            <li data-target="#CarouselTarget" data-slide-to="1"></li>
+            <li data-target="#CarouselTarget" data-slide-to="2"></li>
+        </ol>
+        <!-- Items -->
+        <div class="carousel-inner text-center">
+            <!-- Item -->
+            <div class="carousel-item active" data-interval="3000">
+                <a asp-controller="Events" asp-action="Events"><img src="~/images/events/e1.jpg" class="vh-100 w-100" alt="Event"></a>
+            </div>
+            <!--Item-->
+            <div class="carousel-item" data-interval="3000">
+                <a asp-controller="Events" asp-action="Events"><img src="~/images/events/e2.jpg" class="vh-100 w-100" alt="Event"></a>
+            </div>
+            <!--Item-->
+            <div class="carousel-item" data-interval="3000">
+                <a asp-controller="Events" asp-action="Events"><img src="~/images/events/e4.jpg" class="vh-100 w-100" alt="Event"></a>
+            </div>
+        </div>
+        <!-- Items -->
+        <!-- Controls -->
+        @*<a class="carousel-control-prev" href="#CarouselTarget" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#CarouselTarget" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>*@
+        <!-- Controls -->
+    </div>
+    <!-- Carousel -->
+</div>
+
+<!-- News Section -->
+<div class="Home-News" style="background-color: #141414;">
+    <h1 class="pt-5 pb-5" style="font-family: Impact; font-size: 40pt; padding-left: 40px;top:0;">NEWS</h1>
+    <div class="container">
+        <div class="pb-5 WrapToBottom" id="TopNews">
+            <h1 class="text-center" style="font-family: Impact;">
+                <a href="Link">Curitiba on Afro House map with the Brazilian duo Drunky Daniels</a>
+            </h1>
+            <p class="text-center">
+                Drunky Daniels estão de Volta depois do Album ‘’Zabumba’’
+                lancado no ano passado com destaque na Mixmag,
+                Bantumen e muito outros magazines.
+                A Seres Producões apresenta o seu mais recente
+                Single dos Drunky Daniels, com origens bem
+                brasileiras viajando por drums africanos...
+                <a href="Link" class="text-danger">[read more]</a>
+            </p>
+            @*<img class="w-100 pb-5" src="~/images/articles/n02.jpeg" alt="News" />*@
+        </div>
+        <!--News Grid-->
+        <div class="row">
+            <!--Article-->
+            <div class="col text-center" style="margin: 20px;">
+                <img class="pt-4" src="~/images/articles/n01.jpeg" width="200" height="200" alt="Article">
+                <h3><a href="Link">Music can unite and spread more</a></h3>
+                <p>
+                    Date: 29 Feb 2020
+                </p>
+                <div class="content text-justify">
+                    <p>
+                        Alexandros Djkevingr & Greg Ignatovich (Parquet Recordings,
+                        Diynamic) from Greek came up with the idea for a big
+                        collaboration that unites different countries and
+                        music styles from all over the world...
+                        <a href="Link" class="text-danger">[read more]</a>
+                    </p>
+                </div>
+            </div>
+            <!--Article-->
+            <div class="col text-center" style="margin: 20px;">
+                <img class="pt-4" src="~/images/articles/n02.jpeg" width="200" height="200" alt="Article">
+                <h3><a href="Link">Curitiba on Afro House map with the Brazilian duo Drunky Daniels</a></h3>
+                <p>
+                    Date: 19 Feb 2020
+                </p>
+                <div class="content text-justify">
+                    <p>
+                        Drunky Daniels estão de Volta depois do Album ‘’Zabumba’’
+                        lancado no ano passado com destaque na Mixmag,
+                        Bantumen e muito outros magazines.
+                        A Seres Producões apresenta o seu mais recente
+                        Single dos Drunky Daniels, com origens bem
+                        brasileiras viajando por drums africanos...
+                        <a href="Link" class="text-danger">[read more]</a>
+                    </p>
+                </div>
+            </div>
+            <!--Article-->
+            <div class="col text-center" style="margin: 20px;">
+                <img class="pt-4" src="~/images/articles/n03.jpeg" width="200" height="200" alt="Article">
+                <h3><a href="Link">Duo Two Strong starting the year in Force.</a></h3>
+                <p>
+                    Date: 15 Feb 2020
+                </p>
+                <div class="content text-justify">
+                    <p>
+                        There’s something in the Two Strong duo,
+                        that’s making their music growing each day at the
+                        Angolan music scene and places around the world...
+                        <a href="Link" class="text-danger">[read more]</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-light mt-5 mb-5" asp-controller="News" asp-action="News">MORE NEWS</a>
+    </div>
+</div>
+<!-- Music Section -->
+<div class="Home-News" style="background-color: #141414;">
+    <h1 class="pt-5 pb-5" style="font-family: Impact; font-size: 40pt; padding-left: 40px;top:0;">MUSIC</h1>
+    <div class="container">
+        <p class="text-center">
+            Get the most recent releases by Seres Produções artists.
+            Great tunes, soothing music that rocks your spirit and
+            lead you into another realm, taking you by storm!
+        </p>
+        <!--Music Grid-->
+        <div class="row">
+            <!--Track-->
+            <div class="col text-center">
+                <img class="pt-4" src="~/images/releases/1_Komanta.jpg" width="200" height="200" alt="Release">
+                <h3 style="font-family: Impact;"><a href="Link">KOMANTA</a></h3>
+                <p>
+                    ERAN YAARI
+                </p>
+                <hr class="bg-light" />
+                <span>
+                    <a href="Link">Get a copy</a>
+                </span>
+            </div>
+            <!--Track-->
+            <div class="col text-center">
+                <img class="pt-4" src="~/images/releases/2_Zona.jpg" width="200" height="200" alt="Release">
+                <h3 style="font-family: Impact;"><a href="Link">ZONA VERMELHA</a></h3>
+                <p>
+                    SATELITE & K.O.D
+                </p>
+                <hr class="bg-light" />
+                <span>
+                    <a href="Link">Get a copy</a>
+                </span>
+            </div>
+            <!--Track-->
+            <div class="col text-center">
+                <img class="pt-4" src="~/images/releases/3_BlackCurse.jpg" width="200" height="200" alt="Release">
+                <h3 style="font-family: Impact;"><a href="Link">BLACK CURSE...</a></h3>
+                <p>
+                    GREG, BRUCE, DANIEL...
+                </p>
+                <hr class="bg-light" />
+                <span>
+                    <a href="Link">Get a copy</a>
+                </span>
+            </div>
+            <!--Track-->
+            <div class="col text-center">
+                <img class="pt-4" src="~/images/releases/4_Janaina.jpg" width="200" height="200" alt="Release">
+                <h3 style="font-family: Impact;"><a href="Link">JANAINA</a></h3>
+                <p>
+                    DRUNKY DANIELS"
+                </p>
+                <hr class="bg-light" />
+                <span>
+                    <a href="Link">Get a copy</a>
+                </span>
+            </div>
+        </div>
+        <a class="btn btn-light mt-5 mb-5" asp-controller="Releases" asp-action="Releases">MORE MUSIC</a>
+    </div>
+</div>
+<!-- Radio Section -->
+<div id="HomeRadio" class="pl-5">
+    <h1 class="pt-5 display-4">SERES PRODUÇÕES</h1>
+    <h1 class="pb-5" style="font-family: Impact; font-size: 60pt;">RADIO</h1>
+    <div>
+        <p style="font-size: 20px; max-width: 400px;">
+            Listen back to the weekly SERES PRODUÇÕES Radio Show featuring upfront exclusives,
+            new music and all the latest SERES PRODUÇÕES news, the radio show is your weekly
+            guide to all things SERES PRODUÇÕES.
+        </p>
+
+        <a class="btn btn-light mt-5 mb-5" asp-controller="Radio" asp-action="Radio">TUNE IN</a>
+    </div>
 </div>
