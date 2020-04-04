@@ -2,35 +2,80 @@
 @{
     ViewData["Title"] = "Releases";
 }
-<!-- TO DO: DONE -->
-<div class="container pb-3">
-    <div class="text-center text-primary">
-        <h1 class="display-4">Releases</h1>
-    </div>
 
-    <div class="card-group text-center">
-        @foreach (Release r in Model)
-        {
-            <div style="color: black">
-                <div class="card bg-dark">
-                    <div class="card-body text-white btn-outline-primary">
-                        <img class="card-img" src="@r.Image" style="width:200px" alt="@r.Title">
-                        <div class="card-text m-auto" style="width:200px">
-                            <h5 class="bg-danger">@r.Title</h5>
-                            <p>@r.Artist</p>
-                            <span>
-                                <a href="@r.Link" class="text-white btn btn-success">Grab a copy</a>
-                            </span>
-                        </div>
-                    </div>
+<div>
+    <img class="h-100vh w-100" src="~/images/music_bg.jpg" />
+</div>
+
+<!-- Releases -->
+<div class="pb-5" style="background-color: #141414;">
+    <h1 class="pt-5 pb-5" style="font-family: Impact; font-size: 40pt; padding-left: 40px;top:0;">OUR RELEASES</h1>
+    <div class="container">
+        <div class="row">
+            @foreach (Release r in Model)
+            {
+                <div class="col text-center">
+                    <img class="pt-4" src="@r.Image" width="200" height="200" alt="@r.Title">
+                    <h3 style="font-family: Impact;"><a href="@r.Link">@r.Title</a></h3>
+                    <p>
+                        @r.Artist
+                    </p>
+                    <hr class="bg-light" />
+                    <span>
+                        <a class="text-white btn btn-success" href="@r.Link">Buy</a>
+                    </span>
                 </div>
-            </div>
-        }
+            }
+        </div>
+        <br />
+        <div class="text-left pt-5">
+            <a href="https://www.beatport.com/label/seres-producoes/37629" class="btn btn-light text-dark">MORE RECENT RELEASES</a>
+        </div>
     </div>
-    <br />
-    <span class="text-left">
-        <a href="https://www.beatport.com/label/seres-producoes/37629" class="btn btn-success">MORE RECENT RELEASES</a>
-    </span>
-    <br />
-    @*<p class="bg-danger text-center">Site under contruction...</p>*@
+</div>
+<!-- Artists -->
+<div class="pb-3" style="background-color: #141414;">
+    <h1 class="pt-5 pb-5" style="font-family: Impact; font-size: 40pt; padding-left: 40px;top:0;">OUR ARTISTS</h1>
+    <div class="container pt-3 pb-3">
+        <div class="row text-center">
+            <!-- Artist -->
+            <div class="col artist">
+                <img class="img-fluid" src="~/images/artists/SATELITE.jpg" style="width: 250px" alt="DJ Satelite">
+                <h3 class="pt-3">
+                    DJ SATELITE
+                </h3>
+            </div>
+            <!-- Artist -->
+            <div class="col artist">
+                <img class="img-fluid" src="~/images/artists/DANYKAS.jpg" style="width: 250px" alt="DANYKAS DJ">
+                <h3 class="pt-3">
+                    DANYKAS DJ
+                </h3>
+            </div>
+            <!-- Artist -->
+            <div class="col artist">
+                <img class="img-fluid" src="~/images/artists/KOD.jpg" style="width: 250px" alt="KOD">
+                <h3 class="pt-3">
+                    King Of Drums
+                </h3>
+            </div>
+        </div>
+        <div class="p-5">
+            <a class="btn btn-light text-dark" asp-controller="Artists" asp-action="Artists">CHECK OUT MORE ARTISTS</a>
+        </div>
+    </div>
+</div>
+<!-- Radio Section -->
+<div id="HomeRadio" class="pl-5">
+    <h1 class="pt-5 display-4">SERES PRODUÇÕES</h1>
+    <h1 class="pb-5" style="font-family: Impact; font-size: 60pt;">RADIO</h1>
+    <div>
+        <p style="font-size: 20px; max-width: 400px;">
+            Listen back to the weekly SERES PRODUÇÕES Radio Show featuring upfront exclusives,
+            new music and all the latest SERES PRODUÇÕES news, the radio show is your weekly
+            guide to all things SERES PRODUÇÕES.
+        </p>
+
+        <a class="btn btn-light mt-5 mb-5" asp-controller="Radio" asp-action="Radio">TUNE IN</a>
+    </div>
 </div>

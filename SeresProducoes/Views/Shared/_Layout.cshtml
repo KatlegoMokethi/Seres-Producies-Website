@@ -34,8 +34,19 @@
                         @*<li class="nav-item">
                                 <a class="nav-link text-light" asp-area="" asp-controller="Artists" asp-action="Artists">ARTISTS</a>
                             </li>*@
-                        <li class="nav-item">
-                            <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Releases" asp-action="Releases">MUSIC</a>
+                        @*<li class="nav-item">
+                                <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Releases" asp-action="Releases">MUSIC</a>
+                            </li>*@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-light dropdown-toggle" style="margin-top: 20px;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MUSIC
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-light" asp-controller="Releases" asp-action="Releases">RELEASES</a>
+                                <a class="dropdown-item text-light" asp-controller="Artists" asp-action="Artists">ARTISTS</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-light" href="#">LABELS</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" style="margin-top: 20px;" asp-controller="Events" asp-action="Events">EVENTS</a>
