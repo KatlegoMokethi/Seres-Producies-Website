@@ -63,8 +63,15 @@
 
         .gallery img:hover {
             filter: grayscale(0);
-            transition: ease;
+           -webkit-transform: scale(1.1);
         }
+
+.artist img {
+    transition: 1s;
+}
+.artist img:hover{
+    -webkit-transform: scale(1.1);
+}
 
 .color-overlay {
     position: absolute;
