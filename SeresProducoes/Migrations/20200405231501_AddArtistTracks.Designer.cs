@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SeresProducoes.Models;
 
 namespace SeresProducoes.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200405231501_AddArtistTracks")]
+    partial class AddArtistTracks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -116,7 +118,7 @@ namespace SeresProducoes.Migrations
                             Image = "/images/artists/DANYKAS.jpg",
                             Name = "DANYKAS DJ",
                             SoundCloudLink = "https://soundcloud.com/danykasdj",
-                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/3447553&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
+                            Tracks = "",
                             TwitterLink = "https://twitter.com/danykasdj"
                         },
                         new
