@@ -1,21 +1,32 @@
 ﻿@model Artist
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = Model.Name;
 }
-<!-- TO DO: DONE -->
+
 <div class="container pt-5 pb-3">
+    <h1>
+        @Model.Name
+    </h1>
     <div>
-        <img src="@Model.Image" style="width:200px" alt="@Model.Name">
-        <div class="card-text">
-            <div>
-                <a href="@Model.FacebookLink"><span class="fab fa-facebook-square fa-2x"></span></a>
-                <a href="@Model.TwitterLink"><span class="fab fa-twitter-square fa-2x"></span></a>
-                <a href="@Model.SoundCloudLink"><span class="fab fa-soundcloud fa-2x" style="color: orangered"></span></a>
+        <div class="row">
+            <div class="col-6">
+                <img src="@Model.Image" style="width:100%;" alt="@Model.Name">
             </div>
-            <h3>
-                @Model.Name
-            </h3>
+            <div class="col-6">
+                <p>Latest tracks:</p>
+                <iframe width="400" height="250" scrolling="no" frameborder="0" src="@Model.Tracks"></iframe>
+            </div>
+        </div>
+        <div class="pt-3">
+            <div>
+                <p>
+                    <b>FOLLOW AT:</b>
+                    <a href="@Model.FacebookLink"><span class="p-1 fab fa-facebook-square fa-2x"></span></a>
+                    <a href="@Model.TwitterLink"><span class="p-1 fab fa-twitter-square fa-2x"></span></a>
+                </p>
+            </div>
+
             <h4>Bio</h4>
             <p>@Model.Bio</p>
         </div>

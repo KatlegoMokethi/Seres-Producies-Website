@@ -37,7 +37,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/DANYKAS.jpg",
                             FacebookLink = "https://www.facebook.com/danykasdj/",
                             TwitterLink = "https://twitter.com/danykasdj",
-                            SoundCloudLink = "https://soundcloud.com/danykasdj"
+                            SoundCloudLink = "https://soundcloud.com/danykasdj",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/3447553&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         },
                         new Artist
                         {
@@ -61,7 +62,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/SATELITE.jpg",
                             FacebookLink = "https://www.facebook.com/OfficialDJSatelite",
                             TwitterLink = "https://twitter.com/djsatelite_",
-                            SoundCloudLink = "https://soundcloud.com/djsatelite"
+                            SoundCloudLink = "https://soundcloud.com/djsatelite",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/2259254&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         },
                         new Artist
                         {
@@ -103,7 +105,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/INAMI.jpg",
                             FacebookLink = "https://www.facebook.com/inamikenya/",
                             TwitterLink = "https://twitter.com/fi_inami ",
-                            SoundCloudLink = "https://soundcloud.com/inami-3"
+                            SoundCloudLink = "https://soundcloud.com/inami-3",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/34477332&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         },
                         new Artist
                         {
@@ -121,7 +124,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/KOD.jpg",
                             FacebookLink = "https://www.facebook.com/KODworldwide/",
                             TwitterLink = "https://twitter.com/KOD_worldwide",
-                            SoundCloudLink = "https://soundcloud.com/kod_worldwide"
+                            SoundCloudLink = "https://soundcloud.com/kod_worldwide",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/190055831&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         },
                         new Artist
                         {
@@ -139,7 +143,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/ROSARIO.jpg",
                             FacebookLink = "https://www.facebook.com/Rosariokalenga",
                             TwitterLink = "https://twitter.com/rosariokalenga",
-                            SoundCloudLink = "https://soundcloud.com/rosariokalenga"
+                            SoundCloudLink = "https://soundcloud.com/rosariokalenga",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/2440049&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         },
                         new Artist
                         {
@@ -160,7 +165,8 @@ namespace SeresProducoes.Models
                             Image = "/images/artists/WILSON.jpg",
                             FacebookLink = "https://www.facebook.com/djwilsonkentura",
                             TwitterLink = "https://twitter.com/wilsonkentura",
-                            SoundCloudLink = "https://soundcloud.com/wilson-kentura"
+                            SoundCloudLink = "https://soundcloud.com/wilson-kentura",
+                            Tracks = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/16837712&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                         }
                 );
             modelBuilder.Entity<Article>().HasData(

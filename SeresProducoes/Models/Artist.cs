@@ -18,6 +18,7 @@ namespace SeresProducoes.Models
         public string FacebookLink { get; set; }
         public string TwitterLink { get; set; }
         public string SoundCloudLink { get; set; }
+        public string Tracks { get; set; }
     }
 }
 //DANYKAS DJ
