@@ -3,32 +3,33 @@
 @{
     ViewData["Title"] = Model.Name;
 }
-
-<div class="container pt-5 pb-3">
-    <h1>
+<div class="pt-5" style="background-color: #141414;">
+    <h1 style="padding-left: 35px;">
         @Model.Name
     </h1>
-    <div>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="@Model.Image" style="width:100%;" alt="@Model.Name">
-            </div>
-            <div class="col-md-6">
-                <p>Latest tracks:</p>
-                <iframe width="400" height="250" scrolling="no" frameborder="0" src="@Model.Tracks"></iframe>
+
+    <div class="row">
+        <div class="col-md-6" style="padding-left: 50px;">
+            <p>Latest tracks:</p>
+            <iframe width="400" height="250" scrolling="no" frameborder="0" src="@Model.Tracks"></iframe>
+            <div>
+                <div class="pt-3">
+                    <div>
+                        <p>
+                            <b>FOLLOW AT:</b>
+                            <a href="@Model.FacebookLink"><span class="p-1 fab fa-facebook-square fa-2x"></span></a>
+                            <a href="@Model.TwitterLink"><span class="p-1 fab fa-twitter-square fa-2x"></span></a>
+                        </p>
+                    </div>
+
+                    <h4>Bio</h4>
+                    <p>@Model.Bio</p>
+                </div>
             </div>
         </div>
-        <div class="pt-3">
-            <div>
-                <p>
-                    <b>FOLLOW AT:</b>
-                    <a href="@Model.FacebookLink"><span class="p-1 fab fa-facebook-square fa-2x"></span></a>
-                    <a href="@Model.TwitterLink"><span class="p-1 fab fa-twitter-square fa-2x"></span></a>
-                </p>
-            </div>
-
-            <h4>Bio</h4>
-            <p>@Model.Bio</p>
+        <div class="col-md-6 pb-3">
+            <img src="@Model.Image" style="width:100%;" alt="@Model.Name">
         </div>
     </div>
 </div>
+
