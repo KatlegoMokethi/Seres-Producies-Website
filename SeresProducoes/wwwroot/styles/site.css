@@ -51,8 +51,8 @@ html {
 body {
     /* Margin bottom by footer height */
     /*margin-bottom: 60px;*/
-    background-image: url('../images/clubConcert_.jpg');
-    /*background-color: darkgray;*/   
+    /*background-image: url('../images/clubConcert_.jpg');*/
+    background-color: black;   
 }
 
 .footer {
