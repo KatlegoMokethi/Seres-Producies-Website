@@ -23,6 +23,9 @@ Re-creating a website for a music record label that has been in the music indust
 
 ### Project still under development
 
+## Screenshots
+![](Screenshots/Screenshot.jpg)
+
 ## Development progress
 * Complete first version: https://drive.google.com/open?id=1eSeQjk7GK6zE7ylAcAkJ3s-DSPvtMppg
 * Current re-vamped version: https://drive.google.com/open?id=1wVaidU5CrMdSJ39M2NfTbtXPfnpCznPy
