@@ -112,3 +112,4 @@ C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\Ser
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\SeresProducoes.dll
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\SeresProducoes.pdb
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\SeresProducoes.csproj.CopyComplete
+C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Labels\Labels.cshtml.g.cs
