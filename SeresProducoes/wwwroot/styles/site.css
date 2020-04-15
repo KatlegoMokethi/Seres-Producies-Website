@@ -125,3 +125,34 @@ body {
 .event:hover{
     background-color: #b4b4b4;
 }
+
+.glow {
+    -webkit-box-shadow: 0px 0px 20px 0px #b0e0e6;
+    -moz-box-shadow: 0px 0px 20px 0px #b0e0e6;
+    box-shadow: 0px 0px 20px 0px #b0e0e6;
+    width: 75%;
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+
+    .gallery img {
+        width: 230px;
+        padding: 5px;
+        filter: grayscale(100%);
+        transition: 1s;
+    }
+
+        .gallery img:hover {
+            filter: grayscale(0);
+            -webkit-transform: scale(1.1);
+        }
+
+.artist img, .label img {
+    transition: 1s;
+}
+
+    .artist img:hover, .label img:hover {
+        -webkit-transform: scale(1.1);
+    }
