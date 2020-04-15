@@ -29,8 +29,17 @@ namespace SeresProducoes
             services.AddTransient<IEventRepository, EventRepository>();
             services.AddTransient<IReleaseRepository, ReleaseRepository>();
             services.AddTransient<IImageRepository, ImageRepository>();
-            services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+
+            // Use SQL Database if in Azure, otherwise, use SQLite
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+                services.AddDbContext<AppDbContext>(options =>
+                        options.UseSqlServer(_configuration.GetConnectionString("MyDbConnection")));
+            else
+                services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+
+            // Automatically perform database migration
+            services.BuildServiceProvider().GetService<AppDbContext>().Database.Migrate();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
