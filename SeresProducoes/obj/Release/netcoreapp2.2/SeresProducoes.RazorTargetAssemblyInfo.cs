@@ -13,9 +13,10 @@ using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.ApplicationParts.ProvideApplicationPartFactoryAttribute("Microsoft.AspNetCore.Mvc.ApplicationParts.CompiledRazorAssemblyApplicationPartFac" +
     "tory, Microsoft.AspNetCore.Mvc.Razor")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("SeresProducoes")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Katlego Mokhethi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyProductAttribute("SeresProducoes")]
+[assembly: System.Reflection.AssemblyProductAttribute("SeresProducoes Website")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Re-branding of Seres Producoes record label\'s website")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeresProducoes.Views")]
