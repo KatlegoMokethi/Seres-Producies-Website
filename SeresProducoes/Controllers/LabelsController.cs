@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeresProducoes.Controllers
 {
+    [Route("[controller]")]
     public class LabelsController : Controller
     {
         public IActionResult Labels()
