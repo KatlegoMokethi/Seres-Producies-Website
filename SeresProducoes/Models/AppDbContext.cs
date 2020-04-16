@@ -328,6 +328,30 @@ namespace SeresProducoes.Models
                             Artist = "SONAR ft. TIKWE",
                             Link = "https://www.traxsource.com/title/1272046/more-life",
                             Image = "/images/releases/8_MoreLife.jpg"
+                        },
+                        new Release
+                        {
+                            Id = 9,
+                            Title = "KEMUDA REMIXES",
+                            Artist = "DJ SATELITE",
+                            Link = "https://www.traxsource.com/title/1330792/kemuda-remixes",
+                            Image = "/images/releases/9_KedumaRemixes.jpg"
+                        },
+                        new Release
+                        {
+                            Id = 10,
+                            Title = "MAMBO EP",
+                            Artist = "EuphoriQsoul",
+                            Link = "https://www.traxsource.com/title/1297704/mambo-ep",
+                            Image = "/images/releases/10_MamboEP.jpg"
+                        },
+                        new Release
+                        {
+                            Id = 11,
+                            Title = "Kandongueiro 2000",
+                            Artist = "DJ SATELITE",
+                            Link = "https://www.traxsource.com/title/1311959/kandongueiro-2000",
+                            Image = "/images/releases/11_KANDONGUEIRO2000.jpg"
                         });
             modelBuilder.Entity<Image>().HasData(
                 new Image 
