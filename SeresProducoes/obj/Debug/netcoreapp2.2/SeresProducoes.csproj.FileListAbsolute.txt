@@ -96,7 +96,6 @@ C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\Ser
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\About\About.cshtml.g.cs
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Artists\Artists.cshtml.g.cs
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Artists\Details.cshtml.g.cs
-C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Contact\Contact.cshtml.g.cs
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Events\Events.cshtml.g.cs
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Gallery\Gallery.cshtml.g.cs
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
@@ -113,3 +112,6 @@ C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\Ser
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\SeresProducoes.pdb
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\SeresProducoes.csproj.CopyComplete
 C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Labels\Labels.cshtml.g.cs
+C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Contact\Complete.cshtml.g.cs
+C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Contact\SendEmail.cshtml.g.cs
+C:\Users\KKW MOKHETHI\Documents\Code\Projects\ASP.NET Core\Seres Produções\SeresProducoes\SeresProducoes\obj\Debug\netcoreapp2.2\Razor\Views\Contact\Error.cshtml.g.cs
