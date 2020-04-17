@@ -352,6 +352,14 @@ namespace SeresProducoes.Models
                             Artist = "DJ SATELITE",
                             Link = "https://www.traxsource.com/title/1311959/kandongueiro-2000",
                             Image = "/images/releases/11_KANDONGUEIRO2000.jpg"
+                        }, 
+                        new Release
+                        {
+                            Id = 12,
+                            Title = "Transcend EP",
+                            Artist = "DEMENTED SOUL",
+                            Link = "https://www.traxsource.com/title/1321228/transcend-ep",
+                            Image = "/images/releases/12_TranscendEP.jpg"
                         });
             modelBuilder.Entity<Image>().HasData(
                 new Image 
