@@ -156,3 +156,12 @@ body {
     .artist img:hover, .label img:hover {
         -webkit-transform: scale(1.1);
     }
+
+.row {
+    margin-right: 0px;
+}
+#Videos {
+    background-image: url('/images/VideosBG.jpg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
