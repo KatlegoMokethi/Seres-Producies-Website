@@ -8,22 +8,23 @@
 </div>
 
 <!-- Releases -->
-<div class="pb-5" style="background-color: #141414;">
+<div class="pb-4" style="background-color: #141414;">
     <h1 class="pt-5 pb-5" style="font-family: Impact; font-size: 40pt; padding-left: 40px;top:0;">OUR RELEASES</h1>
     <div class="container">
         <div class="row">
             @foreach (Release r in Model)
             {
-                <div class="col text-center">
+                <div class="col text-center btn-outline-primary">
                     <img class="pt-4" src="@r.Image" width="200" height="200" alt="@r.Title">
-                    <h3 style="font-family: Impact;"><a href="@r.Link">@r.Title</a></h3>
+                    <h3 class="pt-2" style="font-family: Impact;">@r.Title</h3>
                     <p>
                         @r.Artist
                     </p>
                     <hr class="bg-light" />
                     <span>
-                        <a class="text-white btn btn-success" href="@r.Link"><i class="fas fa-shopping-cart"></i>Buy</a>
+                        <a class="text-white btn btn-success" href="@r.Link"><i class="fas fa-shopping-cart"></i> Buy</a>
                     </span>
+                    <hr class="bg-light" />
                 </div>
             }
         </div>
@@ -66,16 +67,24 @@
     </div>
 </div>
 <!-- Radio Section -->
-<div id="HomeRadio" class="pl-5">
+<div id="Videos" class="pl-5">
     <h1 class="pt-5 display-4">SERES PRODUÇÕES</h1>
-    <h1 class="pb-5" style="font-family: Impact; font-size: 60pt;">RADIO</h1>
+    <h1 class="pb-3" style="font-family: Impact; font-size: 40pt;">OFFICIAL MUSIC VIDEOS</h1>
     <div>
-        <p style="font-size: 20px; max-width: 400px;">
-            Listen back to the weekly SERES PRODUÇÕES Radio Show featuring upfront exclusives,
-            new music and all the latest SERES PRODUÇÕES news, the radio show is your weekly
-            guide to all things SERES PRODUÇÕES.
+        <p style="font-size: 20px;">
+            Listen, watch and enjoy SERES PRODUÇÕES music videos that have premeired globally featuring talented artists
+            in the music music industry.
         </p>
 
-        <a class="btn btn-light mt-5 mb-5" asp-controller="Radio" asp-action="Radio">TUNE IN</a>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mb-3">
+                <iframe style="width:100%; height: 315px;" src="https://www.youtube.com/embed/UE3G-9CDCI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- width="560" height="315"-->
+            <div class="col-sm-12 col-md-6">
+                <iframe style="width:100%; height: 315px;" src="https://www.youtube.com/embed/D16zXiGEJi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <a class="btn btn-light mt-5 mb-5 font-weight-bold border-danger" href="https://www.youtube.com/user/seresproducoestv" style="font-size:18px;"><span class="fab fa-youtube" style="color: red;"></span> Youtube Channel</a>
     </div>
 </div>
