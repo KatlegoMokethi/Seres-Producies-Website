@@ -4,10 +4,10 @@
 A record label based in Luanda, Angola. Started in year 2000 by DJ Satelite and has since been extremely blessed
 over the years for counted with massive talented artists who have released top notch works.
 
-## Current website
+## Their current website
 http://www.seresproducoes.com/
 
-## Brief description
+## Project brief description
 Re-creating a website for a music record label that has been in the music industry for two decades...
 
 ## Using:
@@ -21,7 +21,10 @@ Re-creating a website for a music record label that has been in the music indust
 * JQuery
 * PopperJS
 
-### Project still under development
+# Project completed
+## Solution Preview
+https://drive.google.com/open?id=1FKhowS0WIAS-tIG_wZbiY8zFFgsEbYRe
+### Previously on
 https://seresproducoes.azurewebsites.net/
 
 ## Screenshots
