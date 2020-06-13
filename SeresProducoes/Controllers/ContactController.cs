@@ -4,17 +4,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Net.Mail;
-using System.Net;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
 
 namespace SeresProducoes.Controllers
 {
     [Route("[controller]")]
     public class ContactController : Controller
     {
-        MailMessage mail = new MailMessage();
-        SmtpClient smtpServer = new SmtpClient("smtp.gmail.com", 587);
-
         public IActionResult SendEmail()
         {
             return View();
@@ -31,16 +29,26 @@ namespace SeresProducoes.Controllers
                 //send email
                 try
                 {
-                    mail.From = new MailAddress(from);
-                    mail.To.Add(to);
-                    mail.Subject = "Mesasge from site-" + contactModel.Name.ToUpper();
-                    mail.Body = contactModel.Message;
+                    var message = new MimeMessage();
+                    message.From.Add(new MailboxAddress($"{contactModel.Name}", $"{from}"));
+                    message.To.Add(new MailboxAddress("Seres Producoes", $"{to}"));
+                    message.Subject = "Mail From the Web App";
+                    message.Body = new TextPart("plain")
+                    {
+                        Text = $"{contactModel.Message}"
+                    };
 
-                    smtpServer.UseDefaultCredentials = false;
-                    smtpServer.Credentials = new NetworkCredential("2016213635@ufs4life.ac.za", "T^9a**21kyTem");
-                    smtpServer.EnableSsl = true;
-                    smtpServer.Send(mail);
-                    
+                    using (var client = new SmtpClient())
+                    {
+                        client.Connect("smtp.gmail.com", 587, false);
+
+                        // Note: only needed if the SMTP server requires authentication
+                        client.Authenticate($"{from}", "T^9a*updown");
+
+                        client.Send(message);
+                        client.Disconnect(true);
+                    }
+
                     //email confirmation
                     return RedirectToAction("Complete");
                 }
