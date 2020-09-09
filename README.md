@@ -1,11 +1,9 @@
-# Seres Produções [new] Website
+# [New] Seres Produções Website
+https://seresproducoes.com/
 
 ## About Seres Produções
 A record label based in Luanda, Angola. Started in year 2000 by DJ Satelite and has since been extremely blessed
 over the years for counted with massive talented artists who have released top notch works.
-
-## Their current website
-http://www.seresproducoes.com/
 
 ## Project brief description
 Re-creating a website for a music record label that has been in the music industry for two decades...
@@ -24,12 +22,10 @@ Re-creating a website for a music record label that has been in the music indust
 # Project completed
 ## Solution Preview
 https://drive.google.com/open?id=1FKhowS0WIAS-tIG_wZbiY8zFFgsEbYRe
-### Previously on
-https://seresproducoes.azurewebsites.net/
 
 ## Screenshots
 ![](Screenshots/Screenshot.jpg)
 
 ## Development progress
-* Complete first version: https://drive.google.com/open?id=1eSeQjk7GK6zE7ylAcAkJ3s-DSPvtMppg
-* Current re-vamped version: https://drive.google.com/open?id=1wVaidU5CrMdSJ39M2NfTbtXPfnpCznPy
+* Initial version: https://drive.google.com/open?id=1eSeQjk7GK6zE7ylAcAkJ3s-DSPvtMppg
+* Re-vamped version: https://drive.google.com/open?id=1wVaidU5CrMdSJ39M2NfTbtXPfnpCznPy
